@@ -35,13 +35,15 @@ public class DuDoan {
                 if (i <= soLuot && !Win) {
                     System.out.println("Bạn còn " + (soLuot - i + 1) + " lượt thử.");
                 }
-            } catch (InputMismatchException e) {
+            } catch (Exception ex) {
                 System.out.println("Lỗi: Nhập số nguyên. Vui lòng nhập lại !");
                 sc.next(); 
+            } finally {
+                System.out.println("______ Đã kiểm tra xong lượt đoan thứ  " + i + "______");
             }
         }
         if (!Win) {
-            System.out.println("\n--- GAME OVER ---");
+            System.out.println("\n______ GAME OVER ______");
             System.out.println("Bạn đã hết lượt! Số may mắn là: " + soCuaMay);
         }
         System.out.print("\nBạn có muốn chơi tiếp không? (Yes/No): ");
