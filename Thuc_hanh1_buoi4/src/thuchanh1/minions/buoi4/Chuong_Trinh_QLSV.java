@@ -55,13 +55,13 @@ public class Chuong_Trinh_QLSV {
 				String deL = sc.nextLine();
 				if(DSSV.remove(deL))
 				{
-					System.out.println("- Da xoa ten sinh vien thanh cong __");
+					System.out.println("-- Da xoa ten sinh vien thanh cong __");
 				}else {
 					System.out.println(" KHONG TIM THAY TEN SINH VIEN TRONG DANH SACH !!!!");
 				}
 				break;
 			case "e":
-				System.out.println("Tim sinh vien ten co chu 'An':" );
+				System.out.println("--Tim sinh vien ten co chu 'An':" );
                 boolean found = false;
                 for (String sv : DSSV) {
                     if (sv.toLowerCase().contains("an")) {
@@ -69,21 +69,21 @@ public class Chuong_Trinh_QLSV {
                         found = true;
                     }
                 }
-                if (!found) System.out.println("Không có sinh viên nào.");
+                if (!found) System.out.println("DANH SACH KHONG CO TEN SINH VIEN NAY.");
                 break;
             case "f": 
                 Collections.sort(DSSV);
-                System.out.println("Đã sắp xếp danh sách theo thứ tự A-Z.");
+                System.out.println("-- Da sap xep thu tu tu a-z.");
                 break;
             case "g": 
-                System.out.println("Tổng số lượng sinh viên: " + DSSV.size());
+                System.out.println("Tong so luong sinh vien: " + DSSV.size());
                 break;
             case "0":
-                System.out.println("Cảm ơn bạn đã sử dụng chương trình!");
+                System.out.println("---------Merci!----------");
                 System.exit(0);
                 break;
             default:
-                System.out.println("Lựa chọn không hợp lệ!");
+                System.out.println("-KHONG HOP LE! VUI LONG NHAP LAI !!!!!!!!!!!!!");
 			
 			}
 		}while(true);
